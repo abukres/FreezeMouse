@@ -1,4 +1,4 @@
-# Purpose
+## Purpose
 
 This is a Windows system tray application that freezes the mouse pointer on the screen while still enabling the mouse scroll wheel. It was developed so that I can scroll a PDF file I am reading on a Windows tablet using the scroll wheel without the need to swipe manually every time I want to the page up. Call me a very lazy reader!
 
