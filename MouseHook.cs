@@ -33,7 +33,6 @@ namespace FreezeMouse
         /// </returns>
         public bool InstallHook()
         {
-            //_stopWatch = new Stopwatch();
             SetDpiAwareness();
             screenRectangle = Screen.PrimaryScreen.Bounds;
             x_min = screenRectangle.Width*0.97;
@@ -48,10 +47,6 @@ namespace FreezeMouse
                 }
             }
 
-            /*x_min = Convert.ToInt32(ConfigurationManager.AppSettings["x_min"]);
-            x_max = Convert.ToInt32(ConfigurationManager.AppSettings["x_max"]);
-            displayX = Convert.ToBoolean(ConfigurationManager.AppSettings["EnableXDisplay"]);*/
-
             return HookId != IntPtr.Zero;
         }
 
@@ -65,7 +60,7 @@ namespace FreezeMouse
         }
 
         /// <summary>
-        /// Mouse hook procedure to _stopWatch for Shift+Left Mouse Click
+        /// Mouse hook procedure for Left Mouse Click
         /// and prevent the mouse from moving when enabled
         /// </summary>
         /// <param name="nCode">
